@@ -1,0 +1,26 @@
+{
+  "name": "unicode-backend-task-1",
+  "version": "1.0.0",
+  "description": "Order-processing system built in Node.js across 4 stages: Sync, Callbacks, Promises, and async/await with custom errors.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "stage1": "node src/stage1/index.js",
+    "stage2": "node src/stage2/index.js",
+    "stage3:callbacks": "node src/stage3/runCallbacks.js",
+    "stage3:promises": "node src/stage3/runPromises.js",
+    "stage3": "node src/stage3/runCallbacks.js && node src/stage3/runPromises.js",
+    "stage4": "node src/stage4/index.js",
+    "test": "node --test test/orderSystem.test.js"
+  },
+  "keywords": [
+    "nodejs",
+    "order-processing",
+    "async",
+    "promises",
+    "callbacks",
+    "error-handling"
+  ],
+  "author": "Rohit",
+  "license": "ISC"
+}
