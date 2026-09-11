@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1001,
+    "customerId": 1,
+    "items": [
+      {
+        "productId": 101,
+        "quantity": 1
+      },
+      {
+        "productId": 102,
+        "quantity": 2
+      }
+    ],
+    "status": "confirmed",
+    "paymentStatus": "paid"
+  },
+  {
+    "id": 1002,
+    "customerId": 2,
+    "items": [
+      {
+        "productId": 104,
+        "quantity": 1
+      },
+      {
+        "productId": 105,
+        "quantity": 1
+      }
+    ],
+    "status": "confirmed",
+    "paymentStatus": "paid"
+  },
+  {
+    "id": 1003,
+    "customerId": 3,
+    "items": [
+      {
+        "productId": 103,
+        "quantity": 2
+      },
+      {
+        "productId": 106,
+        "quantity": 1
+      }
+    ],
+    "status": "pending",
+    "paymentStatus": "pending"
+  },
+  {
+    "id": 1004,
+    "customerId": 4,
+    "items": [
+      {
+        "productId": 101,
+        "quantity": 2
+      },
+      {
+        "productId": 105,
+        "quantity": 2
+      },
+      {
+        "productId": 102,
+        "quantity": 1
+      }
+    ],
+    "status": "confirmed",
+    "paymentStatus": "paid"
+  }
+]

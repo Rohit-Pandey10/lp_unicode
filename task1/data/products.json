@@ -1,0 +1,44 @@
+[
+  {
+    "id": 101,
+    "name": "Mechanical Keyboard",
+    "price": 1500,
+    "stock": 10,
+    "category": "Accessories"
+  },
+  {
+    "id": 102,
+    "name": "Wireless Mouse",
+    "price": 700,
+    "stock": 25,
+    "category": "Accessories"
+  },
+  {
+    "id": 103,
+    "name": "USB-C Hub",
+    "price": 1200,
+    "stock": 15,
+    "category": "Accessories"
+  },
+  {
+    "id": 104,
+    "name": "27-inch Monitor",
+    "price": 12500,
+    "stock": 5,
+    "category": "Display"
+  },
+  {
+    "id": 105,
+    "name": "Laptop Stand",
+    "price": 1800,
+    "stock": 12,
+    "category": "Accessories"
+  },
+  {
+    "id": 106,
+    "name": "Webcam",
+    "price": 3200,
+    "stock": 8,
+    "category": "Camera"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Shah",
+    "email": "rahul@gmail.com",
+    "city": "Mumbai"
+  },
+  {
+    "id": 2,
+    "name": "Aarav Mehta",
+    "email": "aarav@gmail.com",
+    "city": "Pune"
+  },
+  {
+    "id": 3,
+    "name": "Meera Patel",
+    "email": "meera@gmail.com",
+    "city": "Mumbai"
+  },
+  {
+    "id": 4,
+    "name": "Rohan Desai",
+    "email": "rohan@gmail.com",
+    "city": "Nashik"
+  }
+]
