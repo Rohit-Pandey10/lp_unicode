@@ -1,4 +1,8 @@
 node_modules/
 .DS_Store
+.env
 task1/node_modules/
 task1/.DS_Store
+lp_backend/node_modules/
+lp_backend/.env
+lp_backend/.DS_Store
