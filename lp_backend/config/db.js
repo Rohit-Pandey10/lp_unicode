@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import logger from "../utils/logger.js";
 
 let listenersConfigured = false;
 
@@ -12,9 +13,9 @@ export async function connectDB() {
   }
 
   if (!listenersConfigured) {
-    mongoose.connection.on("connected", () => console.log("MongoDB connected"));
+    mongoose.connection.on("connected", () => logger.info("MongoDB connected"));
     mongoose.connection.on("error", (error) =>
-      console.error("MongoDB error:", error.message),
+      logger.error(`MongoDB error: ${error.message}`)
     );
     listenersConfigured = true;
   }

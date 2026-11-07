@@ -25,6 +25,14 @@ const userSchema = new mongoose.Schema(
       minlength: [6, "Password must be at least 6 characters"],
       select: false,
     },
+    role: {
+      type: String,
+      enum: {
+        values: ["Buyer", "Seller", "Admin"],
+        message: "{VALUE} is not a valid role. Allowed roles are Buyer, Seller, Admin",
+      },
+      default: "Buyer",
+    },
   },
   { timestamps: true },
 );

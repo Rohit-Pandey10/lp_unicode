@@ -1,7 +1,9 @@
 import nodemailer from "nodemailer";
 
 const hasEmailConfig = () =>
-  Boolean(process.env.EMAIL_HOST && process.env.EMAIL_USER && process.env.EMAIL_PASS);
+  Boolean(
+    process.env.EMAIL_HOST && process.env.EMAIL_USER && process.env.EMAIL_PASS,
+  );
 
 let transporter = null;
 
@@ -20,7 +22,9 @@ function getTransporter() {
 export async function sendEmail({ to, subject, text, html }) {
   const currentTransporter = getTransporter();
   if (!currentTransporter) {
-    console.warn(`[Email] Not sent to ${to}: SMTP credentials are not configured`);
+    console.warn(
+      `[Email] Not sent to ${to}: SMTP credentials are not configured`,
+    );
     return;
   }
   try {
@@ -31,7 +35,9 @@ export async function sendEmail({ to, subject, text, html }) {
       text,
       html,
     });
-    console.log(`[Email] Delivered "${subject}" to ${to} (Message ID: ${info.messageId})`);
+    console.log(
+      `[Email] Delivered "${subject}" to ${to} (Message ID: ${info.messageId})`,
+    );
     return info;
   } catch (error) {
     console.error(`[Email] Delivery failed to ${to}:`, error.message);
